@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="empty_state_title_text_color">#20b592</color>
+    <color name="empty_state_content_text_color">#CC2f2f2f</color>
+</resources>

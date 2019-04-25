@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_top_white"
+            tools:ignore="UselessParent">
+
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="15.4sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:text="@string/remove_picture"
+                style="@style/TextAppearance.CustomFontRegular"
+                android:drawableTop="@drawable/ic_cancel"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="23dp"
+                android:id="@+id/tv_bs_remove_picture"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+        />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/tv_bs_upload"
+                android:layout_height="wrap_content"
+                android:textSize="15.4sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:text="@string/upload_picture"
+                style="@style/TextAppearance.CustomFontRegular"
+                android:drawableTop="@drawable/ic_choose_photo"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="23dp"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+
+        />
+
+    </LinearLayout>
+</FrameLayout>

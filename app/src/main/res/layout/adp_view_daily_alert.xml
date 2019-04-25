@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+
+
+>
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sv_daily_alert"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:visibility="visible"
+            tools:background="@drawable/placeholder_image_small"
+            android:scaleType="centerCrop"
+    />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_small"
+    >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17.3sp"
+                android:textColor="#000000"
+                android:layout_marginRight="@dimen/margin_xxlarge"
+                android:maxLines="2"
+                tools:text="Organic Brocolli from whole foods"
+                style="@style/TextAppearance.CustomFontExtraBold"
+                android:id="@+id/tv_daily_alert_name"
+                android:layout_toLeftOf="@+id/iv_daily_alert_book_mark"
+                android:layout_alignParentLeft="true"
+                android:layout_marginEnd="@dimen/margin_xxlarge"
+                android:layout_alignParentStart="true"
+                android:includeFontPadding="false"
+                android:layout_toStartOf="@+id/iv_daily_alert_book_mark"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bookmarked_false"
+                android:layout_alignParentRight="true"
+                android:id="@+id/iv_daily_alert_book_mark"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="2dp"
+                tools:ignore="ContentDescription"
+                android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_top_white"
+            android:orientation="vertical"
+            android:padding="27dp"
+            android:gravity="center"
+    >
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text="@string/total_point_earned_title"
+                style="@style/TextAppearance.CustomFontBold"
+                android:gravity="center_horizontal"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:letterSpacing="0.02"
+                android:text="@string/point_earned_description"
+                style="@style/TextAppearance.CustomFontSemiBold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                tools:ignore="UnusedAttribute"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/theme_green"
+                android:letterSpacing="0.02"
+                android:text="@string/so_keep_earning"
+                style="@style/TextAppearance.CustomFontSemiBold"
+                android:gravity="center"
+                tools:ignore="UnusedAttribute"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:text="@string/okay"
+                style="@style/AppGreenButtonRoundedCorner"
+                android:layout_marginTop="23dp"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:id="@+id/tv_dismiss"
+
+        />
+
+    </LinearLayout>
+</FrameLayout>

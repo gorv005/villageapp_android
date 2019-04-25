@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="empty_state_image_width">110dp</dimen>
+    <dimen name="empty_state_image_height">110dp</dimen>
+    <dimen name="empty_state_title_text_size">18sp</dimen>
+    <dimen name="empty_state_content_text_size">12sp</dimen>
+</resources>

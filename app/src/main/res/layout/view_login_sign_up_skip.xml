@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="16sp"
+          android:textColor="@color/black"
+          android:gravity="center_vertical"
+          android:text="@string/skip"
+          style="@style/TextAppearance.CustomFontSemiBold"
+          android:layout_margin="@dimen/margin_xlarge"
+          android:layout_gravity="end"
+          android:drawableRight="@drawable/b_left_small_arrow"
+          android:padding="@dimen/margin_small"
+          android:id="@+id/tv_login_signup_skip"
+          android:drawablePadding="@dimen/margin_small"
+          android:includeFontPadding="false"
+          android:visibility="gone" android:drawableEnd="@drawable/b_left_small_arrow"/>

@@ -1,0 +1,22 @@
+apply plugin: "com.android.library"
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+
+    // app compat and design support library
+    implementation "com.android.support:appcompat-v7:$appcompatVersion"
+
+    // UI related
+    implementation "uk.co.chrisjenx:calligraphy:$calligraphyVersion"
+}

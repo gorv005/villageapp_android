@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_app_green_alpha_10"
+        android:padding="14dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="30dp"
+>
+
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp" tools:ignore="RtlSymmetry">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="34.6sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal"
+                tools:text="1,860"
+                android:text="@string/zero"
+                android:id="@+id/tv_user_earned_points"
+                style="@style/TextAppearance.CustomFontBold"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15.4sp"
+                android:textColor="#659d25"
+                android:gravity="center_horizontal"
+                android:text="@string/what_is_this"
+                android:id="@+id/tv_what_is_this"
+
+        />
+
+
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:text="@string/enter_your_meals"
+            android:id="@+id/tv_user_enter_your_meal"
+            android:layout_marginTop="0dp"
+            style="@style/AppGreenButtonRoundedCorner"
+
+
+    />
+
+</LinearLayout>

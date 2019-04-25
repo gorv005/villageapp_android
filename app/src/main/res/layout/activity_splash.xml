@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@drawable/z_splash_bg_image"
+        tools:context=".ui.splash.SplashActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/splash_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_centerInParent="true"
+            tools:src="@drawable/village_app_logo" tools:ignore="ContentDescription"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_supermini"
+            android:textColor="#000000"
+            android:letterSpacing="0.02"
+            android:gravity="center_horizontal"
+            android:text="@string/product_by_danica_collins"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:visibility="invisible"
+            style="@style/TextAppearance.CustomFontSemiBold" tools:ignore="UnusedAttribute"/>
+
+</RelativeLayout>

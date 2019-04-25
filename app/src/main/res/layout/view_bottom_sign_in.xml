@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_bottom_sign_in"
+        android:animateLayoutChanges="true">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+    >
+
+        <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_sign_in_remember_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonTint="@color/grey_shade_10"
+                android:text="@string/remember_me"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:includeFontPadding="false"
+                tools:ignore="RtlSymmetry"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal"
+                android:text="@string/forgot_password"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_sign_in_forgot_pwd"
+                android:paddingTop="@dimen/margin_mini"
+                android:paddingBottom="@dimen/margin_mini"
+                android:paddingLeft="@dimen/margin_mini"
+
+                android:layout_alignParentEnd="true" android:paddingStart="@dimen/margin_mini"
+                tools:ignore="RelativeOverlap,RtlSymmetry"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:id="@+id/tv_signin_for_sign_in"
+            style="@style/AppGreenButtonRoundedCorner"
+
+
+    />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="15dp"
+    >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:text="@string/not_a_member_yet"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                style="@style/TextAppearance.CustomFontRegular"/>
+
+        <TextView
+                android:id="@+id/tv_sign_up_in_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:paddingBottom="@dimen/margin_6dp"
+                android:paddingLeft="@dimen/margin_mini"
+                android:paddingRight="@dimen/margin_medium"
+                android:paddingTop="@dimen/margin_6dp"
+                android:text="@string/sign_up"
+                android:textAppearance="@style/TextAppearance.CustomFontBold"
+                android:textColor="@color/theme_green"
+                android:textSize="12sp" android:paddingStart="@dimen/margin_mini"
+                android:paddingEnd="@dimen/margin_medium"/>
+    </LinearLayout>
+
+</LinearLayout>

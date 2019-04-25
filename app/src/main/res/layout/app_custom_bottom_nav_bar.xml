@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+             android:layout_height="@dimen/bottom_nav_bar_height_more"
+
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shadow_bottom_bar_2"
+            android:orientation="vertical"
+    />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_nav_bar_height"
+            android:background="@color/white"
+            android:baselineAligned="false"
+            android:layout_marginTop="10dp">
+
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/rl_nav_home"
+
+        >
+
+            <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bottom_nav_home"
+                    android:layout_gravity="center"
+                    android:scaleType="center"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:background="@drawable/ic_bottom_nav_selected"
+                    android:id="@+id/iv_nav_home"
+
+
+                    tools:ignore="ContentDescription"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/rl_nav_bolt"
+
+        >
+
+            <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bottom_nav_bolt"
+                    android:layout_gravity="center"
+                    android:scaleType="center"
+                    android:id="@+id/iv_nav_alert"
+
+
+            />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/rl_nav_notification"
+
+        >
+
+            <ImageView
+                    android:id="@+id/iv_nav_notification"
+
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bottom_nav_notification"
+                    android:layout_gravity="center"
+                    android:scaleType="center"
+
+            />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/rl_nav_search"
+
+        >
+
+            <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bottom_nav_search"
+                    android:layout_gravity="center"
+                    android:scaleType="center"
+                    android:id="@+id/iv_nav_search"
+
+
+            />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/rl_nav_profile"
+
+        >
+
+            <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bottom_nav_profile"
+                    android:layout_gravity="center"
+                    android:scaleType="center"
+                    android:id="@+id/iv_nav_profile"
+
+
+            />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

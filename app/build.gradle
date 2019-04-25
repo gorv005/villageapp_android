@@ -1,0 +1,159 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    dataBinding {
+        enabled = true
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'villageapp'
+            keyPassword 'villageapp'
+            storeFile file('staging.jks')
+            storePassword 'villageapp'
+        }
+        release {
+            keyAlias 'villageapp'
+            keyPassword 'villageapp'
+            storeFile file('production.jks')
+            storePassword 'villageapp'
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.villageapp"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 7
+        versionName "0.0.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary true
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        debug {
+            versionNameSuffix "-Debug"
+            ext.enableCrashlytics = true
+            signingConfig signingConfigs.debug
+        }
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro', 'proguard-fresco.pro'
+            ext.enableCrashlytics = true
+            signingConfig signingConfigs.release
+        }
+    }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        staging {
+            versionCode 1
+            versionName "0.0.0"
+            applicationIdSuffix ".staging"
+            buildConfigField('String', 'BASE_URL', '"http://107.22.120.217"')
+        }
+
+        production {
+            buildConfigField('String', 'BASE_URL', '"http://107.22.120.217"')
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+
+    /*Android Support Libs*/
+    implementation "com.android.support:appcompat-v7:$appcompatVersion"
+    implementation "com.android.support:design:$appcompatVersion"
+    implementation "com.android.support:recyclerview-v7:$appcompatVersion"
+    implementation "com.android.support:cardview-v7:$appcompatVersion"
+    implementation "com.android.support:customtabs:$appcompatVersion"
+
+    // internally used by other libs like fire base
+    implementation "com.android.support:support-annotations:$appcompatVersion"
+    implementation "com.android.support:support-core-utils:$appcompatVersion"
+    implementation "com.android.support:support-core-ui:$appcompatVersion"
+    implementation "com.android.support:support-v4:$appcompatVersion"
+    implementation "com.android.support:support-fragment:$appcompatVersion"
+    implementation "com.android.support:support-compat:$appcompatVersion"
+    implementation "com.android.support:support-media-compat:$appcompatVersion"
+    implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+
+    /*Android Support Libs*/
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.facebook.fresco:fresco:1.10.0'
+
+    // networking
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    implementation "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    // rxjava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+
+    // Because RxAndroid releases are few and far between, it is recommended you also explicitly depend on RxJava's latest version for bug fixes and new features.
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.3'
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+
+    // UI related
+    implementation "uk.co.chrisjenx:calligraphy:$calligraphyVersion"
+
+    // parceler
+    implementation 'org.parceler:parceler-api:1.1.11'
+    kapt 'org.parceler:parceler:1.1.11'
+
+    //    implementation project(':libs:progressLibrary')
+
+    // firebase notifications
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    // android architecture components - viewModel and liveData
+    implementation "android.arch.lifecycle:extensions:$lifecycleVersion"
+    implementation "android.arch.lifecycle:common-java8:$lifecycleVersion"
+
+    // butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    kapt 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    // Koin for Android Architecture Components
+    implementation 'org.koin:koin-android-architecture:0.9.3'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation project(':progressLibrary')
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.6@aar') {
+        transitive = true
+    }
+
+    /*Circle indicator*/
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1@aar'
+
+    implementation 'com.facebook.android:facebook-login:4.38.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

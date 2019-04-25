@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_toolbar_2"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+    >
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_height"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fl_left_img_container">
+                <ImageView
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:src="@drawable/app_logo_tool_bar"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        android:id="@+id/iv_tool_app_logo"
+                        tools:ignore="ContentDescription"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+
+                />
+
+                <ImageView
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:src="@drawable/left_arrow"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        android:padding="@dimen/margin_medium_2"
+                        android:id="@+id/iv_tool_left_back_button"
+                        tools:ignore="ContentDescription"
+                        android:layout_marginTop="1dp"
+                />
+            </FrameLayout>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal|left|center_vertical"
+                    android:layout_toRightOf="@+id/fl_left_img_container"
+                    tools:text="Soups &amp; Stews Soups &amp; Stews Soups &amp; Stews Soups &amp; Stews Soups &amp; Stews Soups &amp; Stews"
+                    style="@style/TextAppearance.CustomFontExtraBold"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:id="@+id/tv_tool_title"
+                    android:layout_toEndOf="@+id/fl_left_img_container"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:includeFontPadding="false"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+            />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

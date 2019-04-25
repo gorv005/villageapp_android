@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+       >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            >
+
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/on_boarding_1"
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_logo"
+                tools:ignore="ContentDescription"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                tools:text="@string/on_boarding_1"
+                style="@style/TextAppearance.CustomFontSemiBold"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:id="@+id/tv_onboarding_desc"
+
+        />
+
+        <LinearLayout
+                android:id="@+id/onboardingactivity_getstarted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/rounded_corners_app_green_button"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:visibility="visible"
+        >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/margin_large"
+                    android:text="@string/onboarding_get_started"
+                    style="@style/TextAppearance.CustomFontBold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_small"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

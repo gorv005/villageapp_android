@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_edit_profile"
+        android:visibility="gone"
+        android:background="@color/white"
+        tools:visibility="visible"
+>
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="55dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/toolbar_height">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+                tools:src="@drawable/oval"
+                android:layout_width="@dimen/dia_edit_image_profile"
+                android:layout_height="@dimen/dia_edit_image_profile"
+                android:id="@+id/sv_user_image_edit"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13.4sp"
+                android:textColor="#6eb220"
+                android:gravity="center_vertical"
+                android:text="@string/change_picture"
+                android:padding="12dp"
+                style="@style/TextAppearance.CustomFontBold"
+                android:drawableLeft="@drawable/ic_photo_camera"
+                android:drawablePadding="@dimen/margin_6dp"
+                android:layout_marginBottom="25dp"
+                android:id="@+id/tv_change_picture"
+                android:includeFontPadding="false"
+                android:layout_gravity="center"
+
+                android:drawableStart="@drawable/ic_photo_camera"/>
+
+
+        <include layout="@layout/view_name"/>
+
+
+        <include layout="@layout/view_email"/>
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_changes"
+                android:id="@+id/tv_save_changes"
+                style="@style/AppGreenButtonRoundedCorner"
+                android:layout_marginTop="18dp"
+
+        />
+
+
+    </LinearLayout>
+    <include layout="@layout/app_custom_tool_bar"/>
+
+</FrameLayout>

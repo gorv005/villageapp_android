@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_empty"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="@dimen/empty_state_image_width"
+        android:layout_height="@dimen/empty_state_image_height"
+        android:scaleType="centerInside"
+        tools:background="#000000"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.CustomFontMedium"
+        android:textColor="@color/empty_state_title_text_color"
+        android:textSize="@dimen/empty_state_title_text_size"
+        tools:text="@string/progressActivityEmptyTitlePlaceholder" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="@color/empty_state_content_text_color"
+        android:textSize="@dimen/empty_state_content_text_size"
+        tools:text="@string/progressActivityEmptyContentPlaceholder" />
+</LinearLayout>

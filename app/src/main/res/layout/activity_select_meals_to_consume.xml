@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/transparent"
+>
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll_header_search_meals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corners_top_white"
+            android:layout_marginTop="@dimen/margin_dp_10"
+
+    >
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15.4sp"
+                    android:textColor="#000000"
+                    android:alpha=".8"
+                    android:gravity="center_horizontal"
+                    android:text="@string/select_meal_consumed"
+                    style="@style/TextAppearance.CustomFontRegular"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp" tools:ignore="RelativeOverlap"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close_black"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    tools:ignore="ContentDescription"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/iv_close"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_corners_app_fafafa_button"
+        >
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black_60_alpha"
+                    android:layout_toLeftOf="@+id/iv_search_meal"
+                    android:maxLines="1"
+                    android:hint="@string/enter_your_consumed_meals_here"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:id="@+id/edt_search_meals"
+                    android:layout_centerVertical="true"
+                    android:imeOptions="actionSearch"
+                    android:layout_marginLeft="20dp" android:importantForAutofill="no" tools:ignore="UnusedAttribute"
+                    android:layout_marginStart="20dp" android:layout_toStartOf="@+id/iv_search_meal"
+                    android:inputType="text"
+                    android:padding="8dp"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search_small_grey"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_search_meal"
+                    tools:ignore="ContentDescription"
+                    android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <include layout="@layout/line"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_header_search_meals"
+            android:layout_marginBottom="90dp"
+
+    >
+
+        <com.vlonjatg.progressactivity.ProgressFrameLayout
+                android:id="@+id/progressFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+        >
+
+            <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:id="@+id/rv_searched_meals"
+                    tools:listitem="@layout/adp_view_meals_and_points"
+            />
+
+        </com.vlonjatg.progressactivity.ProgressFrameLayout>
+
+
+    </LinearLayout>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/fl_submit_button"
+    >
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:layout_marginTop="10dp">
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13.4sp"
+                    android:textColor="#ffffff"
+                    android:gravity="center_horizontal"
+                    android:text="@string/submit"
+                    android:layout_marginTop="-5dp"
+                    style="@style/AppGreenButtonRoundedCorner"
+                    android:id="@+id/tv_submit"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_bottom_bar_2"
+
+
+        >
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

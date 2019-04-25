@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "835151068306",
+    "firebase_url": "https://village-app-2443c.firebaseio.com",
+    "project_id": "village-app-2443c",
+    "storage_bucket": "village-app-2443c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835151068306:android:36dfce11e85ec952",
+        "android_client_info": {
+          "package_name": "com.villageapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835151068306-vtcr9atu9fijoth8f941h07smr2hevrc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.villageapp",
+            "certificate_hash": "34267b249d20b1cbde6655b3860e6302901c20a2"
+          }
+        },
+        {
+          "client_id": "835151068306-cv3pu4ki9lct6bne3evkvvvsd2l4k6h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_gXuZmTsF34rtDGqVImaY03zR4wben3M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835151068306-cv3pu4ki9lct6bne3evkvvvsd2l4k6h5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "835151068306-e828tc9t8dda6s5doannlhjeeqh0dp39.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.villageapp-staging"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835151068306:android:1765e108eb088fa6",
+        "android_client_info": {
+          "package_name": "com.villageapp.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835151068306-6u2l7hvdtvorjct81mj9avkk4775kk0s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.villageapp.staging",
+            "certificate_hash": "34267b249d20b1cbde6655b3860e6302901c20a2"
+          }
+        },
+        {
+          "client_id": "835151068306-cv3pu4ki9lct6bne3evkvvvsd2l4k6h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_gXuZmTsF34rtDGqVImaY03zR4wben3M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835151068306-cv3pu4ki9lct6bne3evkvvvsd2l4k6h5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "835151068306-e828tc9t8dda6s5doannlhjeeqh0dp39.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.villageapp-staging"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

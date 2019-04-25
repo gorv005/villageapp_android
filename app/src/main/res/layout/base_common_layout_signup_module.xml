@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/login_bg_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/bg_signup"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+    >
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="55dp"
+        >
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="22dp"
+            >
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/z_feed_card_bg"
+                        android:padding="24dp"
+                        android:layout_marginTop="34dp" tools:ignore="UselessParent">
+
+                    <FrameLayout
+                            android:id="@+id/fl_container_add_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="45dp"
+                            >
+
+<!--
+                        <include layout="@layout/content_forgot_password"></include>
+-->
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/login_header_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/village_app_logo_signup"
+                    android:layout_gravity="center_horizontal"/>
+
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/view_login_sign_up_skip"/>
+
+</FrameLayout>

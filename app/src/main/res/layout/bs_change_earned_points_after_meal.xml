@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_top_white"
+            android:orientation="vertical"
+            android:padding="27dp"
+            android:gravity="center"
+            tools:ignore="UselessParent">
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text="@string/congratulations"
+                style="@style/TextAppearance.CustomFontBold"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/ic_success"
+                android:drawablePadding="@dimen/margin_dp_10"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:letterSpacing="0.02"
+                android:text="@string/you_have_earned_points"
+                style="@style/TextAppearance.CustomFontRegular"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                tools:ignore="UnusedAttribute"
+                android:id="@+id/tv_earned_points_on_meal_consumed"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/theme_green"
+                android:letterSpacing="0.02"
+                android:layout_marginTop="30dp"
+                android:text="@string/learn_what_you_have_saved"
+                style="@style/TextAppearance.CustomFontSemiBold"
+                android:gravity="center"
+                android:id="@+id/tv_learned_what_u_saved"
+                tools:ignore="UnusedAttribute"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:text="@string/okay"
+                style="@style/AppGreenButtonRoundedCorner"
+                android:layout_marginTop="43dp"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:id="@+id/tv_dismiss"
+
+        />
+
+    </LinearLayout>
+</FrameLayout>

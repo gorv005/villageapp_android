@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <com.villageapp.utils.copper.CropImageView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_cancel_done_buttons"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/ll_cancel_done_buttons"
+    >
+
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="15.4sp"
+                android:textColor="#ffffff"
+                android:gravity="center_horizontal"
+                android:text="@string/cancel"
+                style="@style/TextAppearance.CustomFontRegular"
+                android:padding="20dp"
+                android:id="@+id/tv_cancel"
+        />
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/iv_rotate" android:layout_height="wrap_content"
+                android:src="@drawable/ic_rotate_image"
+                android:padding="10dp"
+                android:layout_gravity="center" tools:ignore="ContentDescription"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="15.4sp"
+                android:textColor="#ffffff"
+                android:gravity="center_horizontal"
+                android:text="@string/done"
+                style="@style/TextAppearance.CustomFontRegular"
+                android:padding="20dp"
+                android:id="@+id/tv_done"
+
+        />
+
+
+    </LinearLayout>
+</RelativeLayout>

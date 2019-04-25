@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="21dp"
+        android:paddingEnd="21dp"
+        android:background="@drawable/bg_save_planet_2"
+        android:paddingTop="29dp"
+        android:paddingStart="30dp"
+>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="#000000"
+            android:text="@string/congratulations_for_saving_the_planet"
+            style="@style/TextAppearance.CustomFontExtraBold"
+            android:id="@+id/tv_title"
+            tools:ignore="RelativeOverlap"/>
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:src="@drawable/ic_close_black"
+               android:padding="10dp"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentEnd="true"
+               android:id="@+id/iv_close" tools:ignore="ContentDescription"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15.4sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="4.8sp"
+            style="@style/TextAppearance.CustomFontRegular"
+            android:text="@string/with_your_meal_today_this_is_how_you_have_added_a_tiny_drop_by_giving_back_to_the_nature_in_form_of_your_savings"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/tv_title"
+            android:id="@+id/tv_desc"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_desc"
+            tools:listitem="@layout/adp_view_things_u_saved"
+            android:id="@+id/rcy_saved_content"
+    >
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

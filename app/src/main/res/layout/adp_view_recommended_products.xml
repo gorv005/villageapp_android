@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="35dp"
+
+>
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sv_product_image_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:visibility="visible"
+    />
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sv_product_image_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:visibility="gone"
+    />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+    >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17.3sp"
+                android:textColor="#000000"
+                android:layout_marginRight="@dimen/margin_xxlarge"
+                android:maxLines="2"
+                tools:text="Organic Brocolli from whole foods"
+                style="@style/TextAppearance.CustomFontExtraBold"
+                android:id="@+id/tv_resturant_name"
+                android:layout_toLeftOf="@+id/iv_book_mark"
+                android:layout_alignParentLeft="true"
+
+                android:layout_marginEnd="@dimen/margin_xxlarge" android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/iv_book_mark"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bookmarked_false"
+                android:layout_alignParentRight="true"
+                android:id="@+id/iv_book_mark"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                tools:ignore="ContentDescription"
+                tools:visibility="visible"
+                android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            tools:text="30 mins cooking"
+            style="@style/TextAppearance.CustomFontSemiBold"
+            android:alpha=".4"
+            android:id="@+id/tv_cooking_time"
+    />
+
+
+</LinearLayout>

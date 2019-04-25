@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            style="@style/AppEditTextSectionTitle"
+            android:id="@+id/tv_name_title"
+
+    />
+
+    <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:inputType="textPersonName|textCapWords"
+            style="@style/AppEditText"
+            android:layout_marginBottom="16dp"
+            tools:ignore="UnusedAttribute"
+            android:importantForAutofill="no"/>
+
+    <requestFocus/>
+
+</merge>

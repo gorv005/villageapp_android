@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_top_white"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="UselessParent">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="match_parent"
+                android:layout_height="203dp"
+                android:id="@+id/sv_restaurant"
+                tools:src="@drawable/placeholder_image_large"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+        />
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                tools:text="Consume a meal in “Open Cafe”"
+                style="@style/TextAppearance.CustomFontExtraBold"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/tv_consume_meal_in_resturant"
+        />
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="#87c145"
+                android:gravity="center_horizontal"
+                tools:text="Earn 500 points"
+                style="@style/TextAppearance.CustomFontSemiBold"
+                android:id="@+id/tv_earn_free_points"
+        />
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/AppGreenButtonRoundedCorner"
+                android:id="@+id/ll_meal_consumed"
+        >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:gravity="center_horizontal"
+                    android:text="@string/meal_consumed"
+                    android:drawableLeft="@drawable/ic_checked_white"
+                    android:drawablePadding="5dp"
+                    android:includeFontPadding="false"
+                    android:id="@+id/tv_meal_consumed"
+
+
+            />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

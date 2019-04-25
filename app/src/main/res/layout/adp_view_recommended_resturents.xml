@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/margin_xxlarge"
+        android:paddingEnd="@dimen/margin_xxlarge"
+        tools:ignore="RtlSymmetry">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sv_resturant_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+    />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17.3sp"
+            android:textColor="#000000"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/margin_large"
+            tools:text="Open Cafe"
+            style="@style/TextAppearance.CustomFontExtraBold"
+            android:id="@+id/tv_resturant_name"
+            android:maxLines="2"
+            android:minLines="2"
+            android:ellipsize="end"
+    />
+
+
+    <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small" tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+                android:layout_width="@dimen/call_location_diameter"
+                android:layout_height="@dimen/call_location_diameter"
+                android:background="@drawable/oval"
+                android:src="@drawable/ic_call_small"
+                android:padding="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                tools:ignore="ContentDescription" android:layout_marginEnd="@dimen/margin_small"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13.4sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal"
+                tools:text="8976567844"
+                style="@style/TextAppearance.CustomFontSemiBold"
+                android:layout_gravity="center_vertical"
+                android:maxLines="1"
+                android:id="@+id/tv_resturant_phone_no"
+                android:ellipsize="end"
+
+        />
+
+    </LinearLayout>
+    <LinearLayout
+
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+                android:layout_width="@dimen/call_location_diameter"
+                android:layout_height="@dimen/call_location_diameter"
+                android:background="@drawable/oval"
+                android:src="@drawable/ic_location_small"
+                android:padding="@dimen/margin_6dp"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_gravity="center_vertical"
+                tools:ignore="ContentDescription"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13.4sp"
+                android:textColor="#000000"
+                android:gravity="left|center_vertical"
+                tools:text="8589 Ulices Drives Suite 767"
+                style="@style/TextAppearance.CustomFontSemiBold"
+                android:layout_gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:id="@+id/tv_resturant_address"
+                android:maxLines="2"
+                android:minLines="2"
+                android:ellipsize="end"
+
+
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/tv_earn_free_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_corners_app_green_button"
+            android:gravity="center"
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:layout_marginLeft="@dimen/dimen_1dp"
+            android:layout_marginRight="@dimen/dimen_1dp"
+
+    >
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:padding="@dimen/margin_large"
+                android:text="@string/earn_free_points"
+                style="@style/TextAppearance.CustomFontBold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_small"/>
+    </LinearLayout>
+
+
+</LinearLayout>

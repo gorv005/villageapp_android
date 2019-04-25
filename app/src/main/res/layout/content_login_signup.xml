@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:visibility="visible"
+        android:animateLayoutChanges="true">
+
+
+    <include layout="@layout/view_name"/>
+
+
+    <include layout="@layout/view_email"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/password"
+            style="@style/AppEditTextSectionTitle"
+    />
+
+
+    <EditText
+            android:id="@+id/edt_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            style="@style/AppEditTextPassword"
+            android:importantForAutofill="no" tools:ignore="UnusedAttribute"/>
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+        <include layout="@layout/view_bottom_sign_up"/>
+        <include layout="@layout/view_bottom_sign_in"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

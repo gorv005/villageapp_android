@@ -1,0 +1,188 @@
+<resources>
+
+    <!--Facebook integration ids-->
+    <string name="facebook_app_id">334762697350908</string>
+    <string name="fb_login_protocol_scheme">fb334762697350908</string>
+
+
+    <string name="app_name">Village App</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+    <string name="click_back_to_exit">Please click BACK button again to exit</string>
+
+
+    <!-- common -->
+    <string name="no_network_message">No Internet connection. Please try later!</string>
+    <string name="request_timed_out_message">Unable to connect to server. Please check internet connection and try
+        again.
+    </string>
+    <string name="server_error">Some server error occurred. Please try again later.</string>
+    <string name="internal_error">Some internal error occurred. Please try again later.</string>
+
+    <!-- empty view strings -->
+    <string name="empty_view_default_title">No data found</string>
+    <string name="empty_view_default_desc">Sorry! No content available right now. Please check back later.</string>
+
+
+    <!-- error view strings -->
+    <string name="error_view_default_title">Error</string>
+    <string name="error_view_default_desc">There was an error processing the request. Please try again.</string>
+    <string name="default_error_button_retry_text">Retry</string>
+    <string name="on_boarding_1">Interesting recipes for you\nto follow a plant based\nlifestyle</string>
+    <string name="on_boarding_2">Add your daily meals and\nearn your score</string>
+    <string name="on_boarding_3">Live longer and healthier</string>
+    <string name="onboarding_prev">Prev</string>
+    <string name="onboarding_next_string">Next</string>
+    <string name="onboarding_get_started">Get Started</string>
+    <string name="earn_free_points">Earn free points</string>
+    <string name="cooking_time">cooking time</string>
+    <string name="cooking_time_upper_case">Cooking Time</string>
+    <string name="mins">mins</string>
+    <string name="cooking_time_mins">%1$s mins</string>
+    <!--
+        <string name="signup_terms_and_conditions"><![CDATA[Agree with Terms & Conditions and Privacy Policy]]></string>
+    -->
+    <string name="signup_terms_and_conditions">
+        <![CDATA[Agree with <b><font color=#519200> Terms &amp; Conditions </font><b/> and <b><font color=#519200> Privacy Policy</font><b/>]]></string>
+
+    <string name="skip">Skip</string>
+    <string name="remember_me">Remember Me?</string>
+    <string name="error_name_empty">name can\'t be blank</string>
+    <string name="error_field_cant_blank">field can\'t blank</string>
+    <string name="error_field_not_valid_email">email is not valid</string>
+    <string name="error_password_min_length">password min length is %1$d</string>
+    <string name="error_password_max_length">password should not greater than %1$d</string>
+    <string name="please_wait">please wait…</string>
+    <string name="x_mins_cooking_time">%1$s mins cooking time</string>
+    <string name="loading">loading…</string>
+    <string name="name">Name</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="reset_password_title">Reset Password!</string>
+    <string name="enter_verification_code">Enter verification code sent to your email account</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="did_not_receive_code">Didn’t receive code?</string>
+    <string name="resend_code">Resend code</string>
+    <string name="fill_details_change_password">Fill in the below details to change your password</string>
+    <string name="current_password">Current Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="consume_plant_based_meal">Consume plant-based meals to increase your score</string>
+    <string name="profile_menu_saved_items">Saved items</string>
+    <string name="profile_menu_notification_setting">Notification Settings</string>
+    <string name="profile_menu_terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="profile_menu_privacy_policy">Privacy Policy</string>
+    <string name="profile_menu_edit_profile">Edit Profile</string>
+    <string name="profile_menu_logout">Logout</string>
+    <string name="profile_menu_delete_account">Delete Account</string>
+    <string name="profile_menu_change_password">Change Password</string>
+    <string name="remove_picture">Remove Picture</string>
+    <string name="upload_picture">Upload Picture</string>
+
+
+    <!-- product detail -->
+    <string-array name="product_detail_tabs_title">
+        <item>Summary</item>
+        <item>Directions</item>
+        <item>Ingredients</item>
+    </string-array>
+
+
+    <string name="crop_image_activity_title"/>
+    <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="crop_image_menu_crop">Crop</string>
+    <string name="crop_image_menu_flip">Flip</string>
+    <string name="crop_image_menu_flip_horizontally">Flip horizontally</string>
+    <string name="crop_image_menu_flip_vertically">Flip vertically</string>
+
+    <string name="pick_image_intent_chooser_title">Select source</string>
+
+    <string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="total_point_earned_title">These are your total points earned in the application.</string>
+    <string name="point_earned_description">Points will help you earn some rewards and discounts from your favourite restaurants in future,</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="you_have_earned_points">You have earned %1$d points for this</string>
+    <string name="you_have_earned_points_default">You have earned points for this</string>
+    <string name="select_meal_consumed">Select the meals consumed</string>
+    <string name="enter_your_consumed_meals_here">Enter your consumed meals here</string>
+    <string name="product_by_danica_collins">Product by Danica Collins</string>
+    <string name="learn_what_you_have_saved">Learn what you have saved?</string>
+    <string name="okay">Okay</string>
+    <string name="so_keep_earning">So Keep Earning!</string>
+    <string name="your_password_has_been_reset_successfully">Your password has been reset successfully.</string>
+    <string name="your_password_has_been_change_successfully">Your password has been change successfully.</string>
+    <string name="back_to_login">Back to login</string>
+    <string name="change_picture">Change Picture</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_your_email_below_to_reset_your_password">Enter your email below to reset\nyour password</string>
+    <string name="send_verification_email">Send Verification Email</string>
+    <string name="back_to_sign_in">Back to Sign In</string>
+    <string name="a_verification_link_has_been_sent_to_your_registered_email_address">A verification code has been sent to\nyour registered email address</string>
+    <string name="a_verification_code_has_been_sent_to_your_registered_email_address_single_line">A verification code has been sent to your registered email address.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="popular_recipes">Popular Recipes</string>
+    <string name="recommended_products">Recommended Products</string>
+    <string name="recommended_restaurants">Recommended Restaurants</string>
+    <string name="related_recipes">Related Recipes</string>
+    <string name="not_a_member_yet">Not a member yet?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or">OR</string>
+    <string name="sign_up_using_facebook">Signup using Facebook</string>
+    <string name="already_a_member">Already a member?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="zero">0</string>
+    <string name="what_is_this">What is this?</string>
+    <string name="enter_your_meals">Enter your Meals</string>
+    <string name="congratulations_for_saving_the_planet">Congratulations\nfor saving the\nplanet!</string>
+    <string name="with_your_meal_today_this_is_how_you_have_added_a_tiny_drop_by_giving_back_to_the_nature_in_form_of_your_savings">
+        With your meal today, this is how you have added a tiny drop by giving back to the nature in form of your
+        savings
+    </string>
+    <string name="error_new_cnfrm_pwd_mismatch">New and confirm password do not match</string>
+    <string name="meal_consumed">Meal Consumed</string>
+    <string name="consume_meal_resturant_name">Consume a meal in “%1$s”</string>
+    <string name="earn_x_points">Earn %1$d points</string>
+    <string name="earned_x_points">Earned %1$d points</string>
+    <string name="points_for_search_meal">%1$d Points</string>
+    <string name="submit">Submit</string>
+    <string name="daily_alerts">Daily Alerts</string>
+    <string name="mark_as_read_option_will_help_you_earn_point">Mark as read option will help you earn point.</string>
+    <string name="dummy_string_xxl">There’s a quick and easy way to help your kids become happier and healthier-try
+        planning and preparing a meal together. Cooking as a family activity is fun and can be surprisingly quick. In
+        fact, preparing a satisfying meal or dessert from scratch can take less time than dining out. The time it takes
+        to decide where to eat, get everyone ready, drive there and be seated, order and finally eat, takes much longer
+        than you think. The time could be better spent with your loved ones with everyone helping to get the food on the
+        table. Another benefit of scratch cooking is that it allows you to better control the types of ingredients you
+        consume. As people look for ways to avoid trans fats and food allergens, reduce sugar and salt consumption, and
+        increase whole grains, fruits and vegetables in their diets, making dishes from scratch has been “rediscovered.”
+        And the delicious results will please the entire family, especially when you prepare it together. Start with the
+        proper planning and make sure to stock your pantry and freezer with fresh ingredients for simple and healthful
+        dishes. For example, before baking muffins, breads or cookies, make sure you have checked your baking
+        powerhouses-baking soda and baking powder, as well as spices, cornstarch and flour. Replace any that are a year
+        old. If in doubt, start new and date each item to make sure you’ll be reminded next year. Here’s an easy whole
+        grain oatmeal cookie to try: Spicy Oatmeal Cookies 1 cup butter, softened 3/4 cup granulated sugar 3/4 cup brown
+        sugar 2 eggs 1 teaspoon vanilla 11/2 cups all-purpose flour 11/2 teaspoons Clabber Girl or Rumford baking powder
+        1/2 teaspoon baking soda 1/2 teaspoon salt 11/2 cups quick-cooking (not instant) oats 8 oz. raisins 11/2
+        teaspoons cinnamon 1/2 teaspoon allspice Preheat oven to 375
+    </string>
+    <string name="error_terms_not_accepted">Please accept terms and conditions</string>
+    <string name="back">Back</string>
+
+    <string name="tool_title_saved_items">Saved Items</string>
+    <string name="no_saved_item_found">No saved item</string>
+    <string name="hint_search_home">Search recipe, category, restaurant...</string>
+    <string name="search">Search</string>
+    <string name="error_search_field_cant_blank">Search field shouldn\'t be blank</string>
+
+    <string name="notification_channel_id">village_app</string>
+    <string name="notifications">Notifications</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+
+</resources>

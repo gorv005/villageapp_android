@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:id="@+id/content_user_profile_info"
+>
+
+    <include layout="@layout/view_profile_header"/>
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/mini_text_size"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    style="@style/TextAppearance.CustomFontLight"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:alpha=".6"
+                    android:text="@string/consume_plant_based_meal"
+            />
+
+            <include layout="@layout/view_profile_score"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15.4sp"
+                    android:textColor="#000000"
+                    android:text="@string/profile_menu_saved_items"
+                    style="@style/TextAppearance.CustomFontRegular"
+                    android:paddingLeft="@dimen/margin_6dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:alpha=".8"
+                    android:id="@+id/tv_profile_menu_saved_items"
+                    android:paddingStart="@dimen/margin_6dp"
+                    tools:ignore="RtlSymmetry"/>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:id="@+id/ll_change_pwd_menu_container">
+
+                <include layout="@layout/line"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.4sp"
+                        android:textColor="#000000"
+                        android:text="@string/profile_menu_change_password"
+                        style="@style/TextAppearance.CustomFontRegular"
+                        android:paddingLeft="@dimen/margin_6dp"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:alpha=".8"
+                        android:id="@+id/tv_profile_menu_change_password"
+                        android:paddingStart="@dimen/margin_6dp" tools:ignore="RtlSymmetry"/>
+
+            </LinearLayout>
+
+
+
+            <!-- <include layout="@layout/line"/>
+             <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:textSize="15.4sp"
+                     android:textColor="#000000"
+                     android:text="@string/profile_menu_notification_setting"
+                     style="@style/TextAppearance.CustomFontRegular"
+                     android:paddingLeft="@dimen/margin_6dp"
+                     android:paddingTop="14dp"
+                     android:paddingBottom="14dp"
+                     android:alpha=".8"
+                     android:id="@+id/tv_profile_menu_notification_settings"
+                     android:paddingStart="@dimen/margin_6dp" tools:ignore="RtlSymmetry"/>-->
+
+            <include layout="@layout/line"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15.4sp"
+                    android:textColor="#000000"
+                    android:text="@string/profile_menu_terms_and_conditions"
+                    style="@style/TextAppearance.CustomFontRegular"
+                    android:paddingLeft="@dimen/margin_6dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:alpha=".8"
+                    android:id="@+id/tv_profile_menu_terms"
+
+                    android:paddingStart="@dimen/margin_6dp" tools:ignore="RtlSymmetry"/>
+
+            <include layout="@layout/line"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15.4sp"
+                    android:textColor="#000000"
+                    android:text="@string/profile_menu_privacy_policy"
+                    style="@style/TextAppearance.CustomFontRegular"
+                    android:paddingLeft="@dimen/margin_6dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:alpha=".8"
+                    android:id="@+id/tv_profile_menu_privacy_policy"
+
+                    android:paddingStart="@dimen/margin_6dp" tools:ignore="RtlSymmetry"/>
+
+            <include layout="@layout/line"/>
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13.4sp"
+                    android:textColor="@color/black_60_alpha"
+                    android:gravity="center_horizontal"
+                    android:text="@string/profile_menu_edit_profile"
+                    style="@style/TextAppearance.CustomFontRegular"
+                    android:background="@drawable/rounded_corners_app_fafafa_button"
+                    android:padding="14dp"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginTop="@dimen/margin_xxlarge"
+                    android:id="@+id/tv_user_profile_edit"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13.4sp"
+                    android:textColor="@color/black_60_alpha"
+                    android:gravity="center_horizontal"
+                    android:text="@string/profile_menu_logout"
+                    style="@style/TextAppearance.CustomFontRegular"
+                    android:background="@drawable/rounded_corners_stroke_e8e8e8"
+                    android:padding="14dp"
+                    android:layout_marginBottom="17dp"
+                    android:id="@+id/tv_user_profile_logout"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13.4sp"
+                    android:textColor="#EA5050"
+                    android:gravity="center_horizontal"
+                    android:text="@string/profile_menu_delete_account"
+                    style="@style/TextAppearance.CustomFontRegular"
+                    android:background="@drawable/rounded_corners_stroke_e8e8e8"
+                    android:padding="14dp"
+                    android:layout_marginBottom="17dp"
+                    android:id="@+id/tv_user_profile_delete_Account"
+            />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

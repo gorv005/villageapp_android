@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_bottom_sign_up"
+        android:animateLayoutChanges="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_large"
+    >
+
+        <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_sign_up_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonTint="@color/grey_shade_10"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                tools:ignore="RtlSymmetry"
+        />
+
+
+        <TextView
+                android:id="@+id/tv_sign_up_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonTint="@color/grey_shade_10"
+                android:text="@string/signup_terms_and_conditions"
+                android:textSize="12sp"
+                android:padding="@dimen/margin_mini"
+                android:layout_gravity="center_vertical"
+                android:includeFontPadding="false"
+
+        />
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:id="@+id/tv_sign_up"
+            style="@style/AppGreenButtonRoundedCorner"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:text="@string/or"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+    />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_using_facebook"
+            android:background="@drawable/rounded_corners_app_blue_button"
+            android:layout_marginTop="10dp"
+            style="@style/AppGreenButtonRoundedCorner"
+            android:id="@+id/tv_sign_up_facebook"
+
+
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="15dp"
+    >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:text="@string/already_a_member"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                style="@style/TextAppearance.CustomFontRegular"/>
+
+        <TextView
+                android:id="@+id/tv_sign_in_from_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:paddingBottom="@dimen/margin_6dp"
+                android:paddingLeft="@dimen/margin_mini"
+                android:paddingRight="@dimen/margin_medium"
+                android:paddingTop="@dimen/margin_6dp"
+                android:text="@string/sign_in"
+                android:textAppearance="@style/TextAppearance.CustomFontBold"
+                android:textColor="@color/theme_green"
+                android:textSize="12sp" android:paddingStart="@dimen/margin_mini"
+                android:paddingEnd="@dimen/margin_medium"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+include ':app', ':progressLibrary'
+project(':progressLibrary').projectDir = new File('libs/progressLibrary')

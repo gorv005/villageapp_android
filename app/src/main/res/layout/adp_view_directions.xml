@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+>
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp" android:layout_marginStart="15dp">
+
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/vertical_dashed_line"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/ll_top_indicator"
+
+
+                android:orientation="horizontal"/>
+
+        <LinearLayout android:layout_width="10dp"
+                      android:layout_height="10dp"
+                      android:background="@drawable/multi_layer_circle_directions"/>
+
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/vertical_dashed_line"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/ll_bottom_indicator"
+
+
+                android:orientation="horizontal"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_large" android:layout_marginStart="@dimen/margin_large">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                tools:ignore="UselessLeaf"/>
+
+        <RelativeLayout
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sv_image"
+                    android:layout_width="71dp"
+                    android:layout_height="71dp"
+                    app:roundedCornerRadius="12dp"
+
+
+            />
+
+            <LinearLayout
+                    android:layout_toRightOf="@id/sv_image"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp" android:layout_toEndOf="@id/sv_image"
+                    android:layout_marginStart="12dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/theme_green"
+                        android:gravity="center_horizontal"
+                        tools:text="Step 1"
+                        style="@style/TextAppearance.CustomFontBoldItalic"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:id="@+id/tv_step_count"
+
+                />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13.4sp"
+                        android:textColor="#000000"
+                        tools:text="Heat a large soup pot over medium heat."
+                        android:id="@+id/tv_step_desc"
+
+                />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <include layout="@layout/line"
+        />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<resources>
+
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_height_1">64dp</dimen>
+    <dimen name="toolbar_height_more">70dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--margins-->
+    <dimen name="margin_supermini">2dp</dimen>
+    <dimen name="margin_mini">4dp</dimen>
+    <dimen name="margin_6dp">6dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_medium_2">13dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_xlarge">20dp</dimen>
+    <dimen name="margin_xxlarge">24dp</dimen>
+    <dimen name="margin_dp_10">10dp</dimen>
+
+    <!-- fonts -->
+    <dimen name="font_supermini">12sp</dimen>
+    <dimen name="font_mini">14sp</dimen>
+    <dimen name="font_small">16sp</dimen>
+    <dimen name="font_medium">18sp</dimen>
+    <dimen name="font_large">20sp</dimen>
+
+    <dimen name="material_button_height">48dp</dimen>
+
+    <dimen name="height_none">0dp</dimen>
+    <dimen name="dimen_1dp">1dp</dimen>
+
+    <!-- login activity -->
+    <dimen name="login_activity_text_margin_left">65dp</dimen>
+    <dimen name="login_activity_text_margin_right">58dp</dimen>
+
+    <!-- password show hide view -->
+    <dimen name="view_show_hide_password_width">48dp</dimen>
+    <dimen name="view_show_hide_password_height">42dp</dimen>
+    <dimen name="home_content_list_bottom_margin">40dp</dimen>
+    <dimen name="call_location_diameter">25dp</dimen>
+    <dimen name="line_width">0dp</dimen>
+    <dimen name="bottom_nav_bar_height">75dp</dimen>
+    <dimen name="bottom_nav_bar_height_more">85dp</dimen>
+    <dimen name="dia_image_header_profile">85dp</dimen>
+    <dimen name="dia_edit_image_profile">116dp</dimen>
+    <dimen name="mini_text_size">12sp</dimen>
+
+
+    <dimen name="font_supermini_2">11sp</dimen>
+</resources>

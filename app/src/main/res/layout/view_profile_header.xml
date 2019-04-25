@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/dia_image_header_profile"
+            android:layout_height="@dimen/dia_image_header_profile"
+            android:src="@drawable/oval"
+            android:layout_alignParentRight="true"
+            android:id="@+id/sv_profile_user_image"
+            android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/sv_profile_user_image"
+            android:layout_toStartOf="@+id/sv_profile_user_image">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17.3sp"
+                android:textColor="#000000"
+                android:paddingRight="@dimen/margin_mini"
+                tools:text="Micheal Sanchez"
+                style="@style/TextAppearance.CustomFontExtraBold"
+                android:id="@+id/tv_profile_user_name"
+
+                android:paddingEnd="@dimen/margin_mini" tools:ignore="RtlSymmetry"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13.4sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal"
+                tools:text="pollich.kali@immanuel.me"
+                style="@style/TextAppearance.CustomFontRegular"
+                android:id="@+id/tv_profile_user_email"
+
+
+        />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

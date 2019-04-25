@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingRight="@dimen/margin_xxlarge"
+        android:paddingEnd="@dimen/margin_xxlarge"
+        tools:ignore="RtlSymmetry">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sv_recipes_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:roundedCornerRadius="10dp"
+
+    />
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_corners_black_transparent"
+            android:alpha=".5"
+            android:visibility="visible"
+    />
+
+
+    <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="@dimen/margin_large">
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24.6sp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="1.5sp"
+                tools:text="Soups and Stews"
+                android:id="@+id/tv_recipe_catgeory_name"
+                style="@style/TextAppearance.CustomFontExtraBold"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_supermini_2"
+                android:textColor="#ffffff"
+                android:gravity="center_horizontal"
+                tools:text="10 Recipes"
+                android:layout_gravity="bottom"
+                style="@style/TextAppearance.CustomFontExtraBold"
+                android:id="@+id/tv_recipe_total_count"
+
+        />
+    </FrameLayout>
+</FrameLayout>

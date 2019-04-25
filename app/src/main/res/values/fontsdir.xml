@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="font_path_circular_std_book">fonts/Muli-Regular.ttf</string>
+    <string name="font_path_circular_std_book_semibold">fonts/Muli-SemiBold.ttf</string>
+    <string name="font_path_circular_std_book_bold">fonts/Muli-Bold.ttf</string>
+    <string name="font_path_circular_std_book_bold_extra">fonts/Muli-ExtraBold.ttf</string>
+    <string name="font_path_circular_std_book_bold_italic_extra">fonts/Muli-ExtraBoldItalic.ttf</string>
+    <string name="font_path_circular_std_book_light">fonts/Muli-Light.ttf</string>
+    <string name="font_path_circular_std_book_medium">fonts/Muli-SemiBold.ttf</string>
+
+
+    <style name="TextAppearance.CustomFontRegular" parent="android:TextAppearance">
+        <item name="fontPath">@string/font_path_circular_std_book</item>
+    </style>
+
+    <style name="TextAppearance.CustomFontSemiBold" parent="@style/TextAppearance.CustomFontRegular">
+        <item name="fontPath">@string/font_path_circular_std_book_semibold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.CustomFontBold" parent="@style/TextAppearance.CustomFontRegular">
+        <item name="fontPath">@string/font_path_circular_std_book_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.CustomFontExtraBold" parent="@style/TextAppearance.CustomFontRegular">
+        <item name="fontPath">@string/font_path_circular_std_book_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.CustomFontMedium" parent="@style/TextAppearance.CustomFontRegular">
+        <item name="fontPath">@string/font_path_circular_std_book_semibold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.CustomFontLight" parent="@style/TextAppearance.CustomFontRegular">
+        <item name="fontPath">@string/font_path_circular_std_book_light</item>
+    </style>
+
+
+</resources>

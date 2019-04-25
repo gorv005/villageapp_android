@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23sp"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal"
+                    tools:text="Hot and Sour soup"
+                    style="@style/TextAppearance.CustomFontBold"
+                    android:id="@+id/tv_prod_name"
+            />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="18dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13.4sp"
+                        android:textColor="#000000"
+                        android:gravity="center_horizontal"
+                        android:text="@string/cooking_time_upper_case"
+                        style="@style/TextAppearance.CustomFontRegular"
+                        android:alpha=".3"
+                        android:layout_marginRight="@dimen/margin_small"
+
+                        android:layout_marginEnd="@dimen/margin_small"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13.4sp"
+                        android:textColor="#000000"
+                        android:gravity="center_horizontal"
+                        tools:text="30 mins"
+                        style="@style/TextAppearance.CustomFontSemiBold"
+                        android:id="@+id/tv_prod_cooking_time"
+
+                />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13.4sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="8.6sp"
+                    android:alpha=".7"
+                    android:layout_marginTop="18dp"
+                    style="@style/TextAppearance.CustomFontRegular"
+                    android:id="@+id/tv_prod_desc"
+
+                    tools:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters"
+            />
+
+        </LinearLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13.4sp"
+                android:textColor="#000000"
+                android:gravity="start"
+                android:text="@string/related_recipes"
+                style="@style/TextAppearance.CustomFontExtraBold"
+                android:padding="18dp"
+        />
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/adp_view_recommended_products"
+                android:id="@+id/rcy_related_recipies"
+                android:paddingLeft="18dp"
+                android:paddingStart="18dp"
+                tools:ignore="RtlSymmetry"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

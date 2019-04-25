@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true">
+
+        <LinearLayout
+                android:id="@+id/onboardingactivity_skipnextbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:gravity="center" tools:ignore="UselessParent"
+                android:layout_marginStart="@dimen/margin_medium">
+
+            <TextView
+                    android:id="@+id/onboarding_activity_prev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_xlarge"
+                    android:text="@string/onboarding_prev"
+                    android:textColor="@color/black"
+                    android:alpha=".5"
+                    tools:visibility="visible"
+                    android:visibility="invisible"
+                    style="@style/TextAppearance.CustomFontBold"
+                    android:textSize="@dimen/font_medium"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/pageIndicatorView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_small"
+                        app:centered="true"
+                        app:fillColor="@color/theme_green"
+                        app:pageColor="@color/transparent"
+                        app:radius="5dp"
+                        app:strokeColor="@color/theme_green"
+                        app:strokeWidth="1dp"/>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/onboarding_activity_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_xlarge"
+                    style="@style/TextAppearance.CustomFontBold"
+                    android:text="@string/onboarding_next_string"
+                    android:textColor="@color/theme_green"
+                    android:textSize="@dimen/font_medium"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

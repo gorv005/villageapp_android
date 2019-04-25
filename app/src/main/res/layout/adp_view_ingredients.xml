@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_large">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_xxlarge">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15.4sp"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                tools:text="Green beans"
+                style="@style/TextAppearance.CustomFontBold"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_ingredient_name"
+                android:layout_toLeftOf="@+id/tv_quantity"
+
+                android:layout_toStartOf="@+id/tv_quantity"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15.4sp"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                tools:text="2 cups"
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_quantity"
+                android:layout_centerVertical="true"
+
+                android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <include layout="@layout/line"/>
+
+</LinearLayout>
